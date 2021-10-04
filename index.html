@@ -4,31 +4,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div id="portifolio">
+    <div class="general" id="division1">
       <img src="./assets/img/unnamed.jpg" id="photo" />
       <h1 id="h1">
         Welcome my portfolio, below are the information and projects, enjoy!
       </h1>
-      <a class="button" type="button">Portfolio</a>
+      <a class="button" type="button" onclick="openModal()">Portfolio</a>
       <a class="button" href="https://github.com/elbertsilva/React-Login-Grud">
-        Registration: Api-Sass-Knex-Mysql-React
+        Registration: Api-Knex-Mysql-React-Sass
       </a>
       <a
         class="button"
         href="https://github.com/elbertsilva/Menu-in-react-for-desk-and-mobile"
-        >Menu: React-dask and mobile
+        >Menu: React-desk and mobile
       </a>
       <a class="button" type="button"></a>
     </div>
     <!-- Portfolio -->
-    <div id="modalPortfolio">
-      <modal>
-        <title> </title>
-      </modal>
+    <div id="division2">
+      <div class="portfolio">
+        <ul id="geral">
+          <li><a onclick="contact()">CONTACT</a></li>
+          <li><a onclick="aboutMe()">ABOUT ME</a></li>
+          <li>
+            <a onclick="aboutMeClose()" id="contactClose">MENU</a>
+          </li>
+        </ul>
+
+        <div id="aboutMe">
+          <h1>Elbert Eduardo Martins da Silva</h1>
+          <p>Indaiatuba, São Paulo, Brasil</p>
+          <p>
+            I am currently junior developer. Graduated in Production
+            Engineering. 6 months experience in the USA for Learning Program
+            Developer. I have experience in: Bootstrap, CSS, JavaScript, Html,
+            Mysql, Php, React, Sass, Sql server. Optimize process, control plan,
+            work instruction.
+          </p>
+        </div>
+        <div id="contact">
+          <p>E-mail: elberteduardomartins@gmail.com</p>
+          <p></p>
+        </div>
+        <button id="buttonReturn" type="button" onclick="closeModal()">
+          Return
+        </button>
+      </div>
     </div>
+    <script type="text/javascript" src="./javascript.js/javascript.js"></script>
   </body>
 </html>
