@@ -5,7 +5,7 @@ function openModal() {
 
   console.log(modal);
   modal.style.display = "none";
-  modal2.style.display = "block";
+  modal2.style.display = "flex";
 }
 
 function closeModal() {
