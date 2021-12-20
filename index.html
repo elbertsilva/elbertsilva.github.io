@@ -4,58 +4,147 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/introducao.css" />
+    <link rel="stylesheet" type="text/css" href="global/global.css" />
+    <link rel="stylesheet" type="text/css" href="css/experiencia.css" />
+    <link rel="stylesheet" type="text/css" href="css/formacao.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/project.css" />
+
+    <title>Portifólio</title>
   </head>
   <body>
-    <div class="general" id="division1">
-      <img src="./assets/img/unnamed.jpg" id="photo" />
-      <h1 id="h1">
+    <header class="header">
+      <h1 alt="Elbert cinza">Elbert Eduardo Martins da Silva</h1>
+      <nav>
+        <ul class="header-menu">
+          <li><a href="#project">Project</a></li>
+          <li><a href="#experiencia">Experience</a></li>
+          <li><a href="#formacao">Formation</a></li>
+          <li><a href="#contato">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="introducao">
+      <img src="img/ElbertTerno.jpg" alt="Elbert cinza" />
+      <div>
+        <h1>Engineer/Developer <br />Front End/Back End</h1>
+        <p>Located in Indaiatuba-SP</p>
+      </div>
+    </main>
+    <section class="experiencia" id="experiencia" arial-label="Experience">
+      <h2 class="subtitulo">Experience</h2>
+      <div>
+        <p class="experiencia-texto">
+          I develop small projects using<strong>
+            HTML, CSS, BOOTSTRAP, SASS, JAVASCRIPT, REACT, PHP, SQL SERVER,
+            MYSQL</strong
+          >
+          for web apps. UX and UI connectivity.
+        </p>
+
+        <div class="empresa">
+          <span class="empresa-ano">2021</span>
+          <h3 class="empresa-titulo">Conforce</h3>
+          <span class="empresa-titulo">junior developer</span>
+          <p class="empresa-texto">
+            At Conforce I worked on the complete development of the Checklist. I
+            created components in react for the DHL project.
+          </p>
+          <ul class="empresa-habilidades">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>SASS</li>
+            <li>JAVASCRIPT</li>
+            <li>REACT</li>
+          </ul>
+        </div>
+        <div class="empresa">
+          <span class="empresa-ano">2021</span>
+          <h3 class="empresa-titulo">Data Science , Everett, WA USA</h3>
+          <span class="empresa-titulo">Learning Program Developer</span>
+          <p class="empresa-texto">
+            I developed small projects, such as web pages, database, complete
+            crud.
+          </p>
+          <ul class="empresa-habilidades">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>PHP</li>
+            <li>SQL SERVE</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="project">
+      <h1 class="projeto-h1">
         Welcome my portfolio, below are the information and projects, enjoy!
       </h1>
-      <a class="button" type="button" onclick="openModal()">Portfolio</a>
-      <a class="button" href="https://elbertsilva.github.io/Loja-de-games/"
-        >Loja de games
-      </a>
-      <a class="button" href="https://elbertsilva.github.io/Jls/">Jls sports</a>
-      <a
-        class="button"
-        href="https://elbertsilva.github.io/React-login-and-crud/"
-      >
-        Registration
-      </a>
-    </div>
-    <!-- Portfolio -->
-    <div id="division2">
-      <div class="portfolio">
-        <ul id="geral">
-          <li><a onclick="contact()">CONTACT</a></li>
-          <li><a onclick="aboutMe()">ABOUT ME</a></li>
+      <div class="projeto-geral">
+        <a class="button" href="https://elbertsilva.github.io/Loja-de-games/"
+          >Loja de games</a
+        >
+        <a class="button" href="https://elbertsilva.github.io/Jls/"
+          >Jls sports</a
+        >
+      </div>
+    </section>
+    <section class="formacao" id="formacao" arial-label="formacao">
+      <div class="formacao-container">
+        <h2 class="subtitulo">Generation</h2>
+        <div>
+          <p class="formacao-texto"></p>
+          <ul class="faculdade-lista">
+            <li class="faculdade">
+              <span class="faculdade-tipo">Bacharel</span>
+              <h3 class="faculdade-curso">Production enginnering</h3>
+              <span class="faculdade-instituicao"
+                >Centro universitário Max Planck</span
+              >
+            </li>
+          </ul>
+          <div class="formacao-extra">
+            <div class="cursos">
+              <h3>Courses</h3>
+              <ul>
+                <li>
+                  Front-end developer - SENAI-Indaiatuba-SP - 2021 - Concluded
+                </li>
+                <li>
+                  Programming logic - SENAI-Indaiatuba-SP - 2021 - Concluded
+                </li>
+              </ul>
+            </div>
+            <div class="idiomas">
+              <h3>Language</h3>
+              <ul>
+                <li>English - Intermediate</li>
+                <li>Espanish - Basic</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer" id="contato">
+      <div class="footer-container">
+        <p class="footer-texto">
+          I am available for new projects at the moment. Get in touch with me to
+          arrange a conversation.
+        </p>
+        <ul>
+          <li>elberteduardomartins@gmail.com</li>
+          <li>+55 19 99503-3572</li>
           <li>
-            <a onclick="aboutMeClose()" id="contactClose">MENU</a>
+            <a
+              href="https://www.linkedin.com/in/elbert-eduardo-martins-da-silva-70344596/"
+              >@linkedin</a
+            >
           </li>
         </ul>
-
-        <div id="aboutMe">
-          <h1>Elbert Eduardo Martins da Silva</h1>
-          <p>Indaiatuba, São Paulo, Brasil</p>
-          <p>
-            I am currently junior developer. Graduated in Production
-            Engineering. 6 months experience in the USA for Learning Program
-            Developer. I have experience in: Bootstrap, CSS, JavaScript, Html,
-            Mysql, Php, React, Sass, Sql server. Optimize process, control plan,
-            work instruction.
-          </p>
-        </div>
-        <div id="contact">
-          <p>E-mail:</p>
-          <p>elberteduardomartins@gmail.com</p>
-        </div>
-        <button id="buttonReturn" type="button" onclick="closeModal()">
-          Return
-        </button>
       </div>
-    </div>
-    <script type="text/javascript" src="./js/index.js"></script>
+    </section>
   </body>
 </html>
