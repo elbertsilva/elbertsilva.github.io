@@ -18,16 +18,32 @@
   font-size: 1.5rem;
 }
 
-@media (max-width: 100px) {
+@media (max-width: 1000px) {
   .introducao h1 {
     font-size: 3rem;
   }
 }
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .introducao h1 {
+    font-size: 2rem;
+  }
+  .introducao h1::before {
+    width: 30px;
+    height: 10px;
+    left: 0;
+  }
+}
+
 @media (max-width: 800px) {
   .introducao {
     grid-template-columns: 1fr;
   }
-  .introducao h1 {
-    font-size: 2rem;
+  .introducao img {
+    display: none;
   }
 }
