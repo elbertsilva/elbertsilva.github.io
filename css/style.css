@@ -1,0 +1,180 @@
+* {
+background-color: #f1f1f1;
+}
+.nav {
+    background-color: #f1f1f1;
+    display: inline-flex;
+    flex-direction: row;
+    padding: auto;
+    height: 50px;
+    width: 100%;    
+    justify-content: flex-start; /* aqui movimenta o menu para direita */
+}
+.nav > p {
+    color: #484d50;
+    padding: auto;   
+    width: 30%;
+}
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  li a {
+    display: block;
+    color: #484d50;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+    color: #f1f1f1;
+  }
+.container {
+    display: inline-grid;
+    grid-template-columns: 2fr 2fr;
+    background-color: #f1f1f1;
+    padding: auto;
+    gap: 10px;
+    height: 10px;
+    width: 100%;
+}
+.container > div {
+    background-color: #f1f1f1;
+    border: 2px solid #fcfcfc;
+    border-radius: 10px;
+    color: #484d50;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.containerSobre > div {
+    background-color: #f1f1f1;
+    border: 1px solid #fcfcfc;
+    color: #484d50;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 100%;
+}
+.containerSobre div h1 {
+    padding: 20px;
+}
+.containerLenguage {
+    background-color: #f1f1f1;
+    border: 2px solid #fcfcfc;
+    border-radius: 10px;
+    color: #484d50;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 100%;
+}
+.containerLenguage div {
+    padding: 20px;
+}
+
+.containerExperiencia div {
+    background-color: #f1f1f1;
+    border: 2px solid #fcfcfc;
+    border-radius: 10px;
+    color: #484d50;
+    padding: 20px;
+}
+.containerExperiencia div h1 {
+    padding: 20px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    height: 400px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .containerCard {
+    padding: auto;
+    width: 50%;
+    height: 10%;
+    display: inline-grid;
+    grid-template-columns: max-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .imgCard {
+    width: 100%;
+    height: 60%;
+  }
+  .buttonCard {
+    width: 100%;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    height: 50px;
+  }
+/*---------------------MOBILE------------------------*/
+
+/* Media Queries para telas menores */
+@media (max-width: 768px) {
+  .nav > p {
+    width: 100%; /* Coloca o texto dentro da navegação para ocupar toda a largura */
+    text-align: center;
+  }
+
+  .container {
+    grid-template-columns: 1fr; /* Empilha os itens da container */
+  }
+
+  .containerSobre > div {
+    flex-direction: column; /* Alinha os itens verticalmente */
+    height: auto; /* Ajusta altura conforme o conteúdo */
+  }
+
+  .containerLenguage, .containerExperiencia, .containerCard {
+    width: 100%; /* Garante que os containers ocupem toda a largura */
+  }
+
+  .card {
+    width: 100%; /* A largura do card vai ser 100% em telas pequenas */
+    height: auto; /* Ajusta a altura para manter proporções */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Pequenas telas como celulares */
+  .nav {
+    flex-direction: column; /* Navegação se torna vertical */
+    height: auto;
+    padding: 10px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column; /* Lista de navegação em coluna */
+  }
+
+  li a {
+    text-align: left;
+    padding: 10px 15px;
+  }
+
+  .container > div {
+    font-size: 18px; /* Reduz o tamanho da fonte para pequenos dispositivos */
+  }
+
+  .containerCard {
+    grid-template-columns: 1fr; /* Cards ficam em uma coluna */
+  }
+
+  .buttonCard {
+    height: 40px; /* Ajusta o tamanho do botão */
+  }
+}
